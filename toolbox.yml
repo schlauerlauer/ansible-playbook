@@ -34,7 +34,7 @@
 
 - name: install toolbox packages
   become: false
-  command: toolbox run dnf -y install {{ item }}
+  command: toolbox run sudo dnf -y install {{ item }}
   with_items: "{{ toolbox_packages }}"
   register: result
   failed_when:
