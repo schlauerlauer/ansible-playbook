@@ -12,7 +12,6 @@
   command: "toolbox list"
   register: result
   become: false
-  become_user: "{{ user }}"
 
 - name: fail if toolbox not present
   fail:
@@ -20,9 +19,26 @@
   when: result.rc != 0 or "registry.fedoraproject.org" not in result.stdout
 
 - name: update toolbox dnf
+  become: false
   command: toolbox run sudo dnf -y update
-  become_user: "{{ user }}"
+  vars:
+    cond: "{{ toolbox_update }}"
+  when: cond
 
 - name: upgrade toolbox dnf
+  become: false
   command: toolbox run sudo dnf -y upgrade
-  become_user: "{{ user }}"
+  vars:
+    cond: "{{ toolbox_update }}"
+  when: cond
+
+- name: install toolbox packages
+  become: false
+  command: toolbox -y install {{ item }}
+  with_items: "{{ toolbox_packages }}"
+  register: result
+  failed_when:
+    - result.rc != 0
+  vars:
+    cond: "{{ toolbox_packages_install }}"
+  when: cond
