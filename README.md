@@ -59,6 +59,7 @@ Ansible Playbook to automatically setup my workstation
 - gnome accounts
 - firefox bitwarden addon
 - gnome extension firefox addon & hide activities button
+- lock screen timeout
 
 ### Aliases
 

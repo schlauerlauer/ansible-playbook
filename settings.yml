@@ -49,4 +49,7 @@ firefox_addons:
   - bitwarden-password-manager
   - gnome-shell-integration
 
+gnome_shell_extensions:
+  - 1317 # alt-tab-switcher-popup-delay-removal
+
 post_install_reboot: true

@@ -22,3 +22,6 @@
 - name: "reboot needed"
   debug:
     msg: "please reboot after installing rpm-ostree packages."
+  vars:
+    cond: "{{ rpm_ostree_install }}"
+  when: cond

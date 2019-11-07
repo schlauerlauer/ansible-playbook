@@ -16,7 +16,7 @@
 # Firefox Addons
 - name: "open firefox addon pages"
   become: false
-  command: "firefox https://addons.mozilla.org/en-US/firefox/addon/{{ item }}/"
+  command: "firefox --new-window https://addons.mozilla.org/en-US/firefox/addon/{{ item }}/"
   with_items: "{{ firefox_addons }}"
   register: result
   failed_when:

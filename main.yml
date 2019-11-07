@@ -25,3 +25,13 @@
       import_tasks: misc.yml
     - name: post install
       import_tasks: post_install.yml
+
+- hosts: localhost
+  become: false
+  roles:
+    - name: include settings
+      include_vars:
+        file: settings.yml
+    - role: jaredhocutt.gnome_extensions
+      vars:
+        gnome_extension_ids: "{{ gnome_shell_extensions }}"
