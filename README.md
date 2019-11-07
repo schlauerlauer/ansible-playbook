@@ -52,6 +52,7 @@ Ansible Playbook to automatically setup my workstation
 - battery percentage
 - background & scale
 - favorite apps
+- display idle timeout
 
 ## Extensions
 
@@ -78,7 +79,6 @@ Ansible Playbook to automatically setup my workstation
 
 - nextcloud sync login
 - gnome accounts
-- lock screen timeout
 
 ### toolbox vscodium
 

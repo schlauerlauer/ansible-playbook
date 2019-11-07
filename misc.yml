@@ -12,6 +12,8 @@
     cond: "{{ set_gsettings }}"
   when: cond
 
+- name: open gnome online accounts
+  command: "gnome-control-center"
 
 # Firefox Addons
 - name: "open firefox addon pages"
