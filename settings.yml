@@ -22,9 +22,9 @@ flatpak_packages:
   - org.signal.Signal
   - com.bitwarden.desktop
   - com.spotify.Client
+  - io.github.celluloid_player.Celluloid
   #- org.blender.Blender
   #- org.darktable.Darktable
-  - io.github.celluloid_player.Celluloid
   #- org.gnome.Boxes
   #- org.godotengine.Godot
   #- com.visualstudio.code.oss
@@ -36,7 +36,6 @@ flatpak_packages:
   #- org.shotcut.Shotcut
 flatpak_packages_remove: false
 flatpak_remove:
-  - org.gnome.Boxes
 
 set_gsettings: true
 gnome_settings:
