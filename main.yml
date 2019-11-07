@@ -23,3 +23,5 @@
       import_tasks: flatpak.yml
     - name: gnome settings
       import_tasks: gnome.yml
+    - name: post install
+      import_tasks: post_install.yml

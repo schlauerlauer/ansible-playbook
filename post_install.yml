@@ -1,0 +1,8 @@
+---
+
+- name: reboot
+  become: false
+  reboot:
+  vars:
+    cond: "{{ post_install_reboot }}"
+  when: cond
