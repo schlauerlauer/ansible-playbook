@@ -15,6 +15,7 @@
 - name: open gnome online accounts
   command: "gnome-control-center"
   async: 900
+  poll: 0
 
 - name: "open firefox app-password sites"
   become: false
@@ -26,7 +27,8 @@
   vars:
     cond: "{{ firefox_enable }}"
   when: cond
-  async: 600
+  async: 900
+  poll: 0
 
 - name: "open bitwarden"
   become: false
@@ -43,6 +45,7 @@
   vars:
     cond: "{{ firefox_enable }}"
   when: cond
+  async: 600
 
 - name: set fish welcome message
   replace:
