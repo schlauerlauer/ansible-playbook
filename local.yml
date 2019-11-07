@@ -1,0 +1,7 @@
+---
+
+- hosts: localhost
+  become: true
+  tasks:
+    - name: rpm-ostree tasks
+      import_tasks: rpm.yml
