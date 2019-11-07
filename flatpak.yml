@@ -27,3 +27,5 @@
   vars:
     cond: "{{ flatpak_packages_install }}"
   when: cond
+
+# TODO: remove

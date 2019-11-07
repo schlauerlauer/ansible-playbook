@@ -1,0 +1,7 @@
+---
+
+- name: set gnome theme
+  dconf:
+    key: "/org/gnome/desktop/interface/gtk-theme"
+    value: "{{ gnome_theme }}"
+    state: present

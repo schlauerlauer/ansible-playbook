@@ -46,6 +46,8 @@ Ansible Playbook to automatically setup my workstation
 - minetime (fh) .desktop to .local/share/applications (same as vscodium)
 - set -U fish_greeting ""
 - background image
+- gnome favorites
+- reboot
 
 ### Firefox Addons
 
@@ -63,8 +65,16 @@ Ansible Playbook to automatically setup my workstation
 ### Gnome Tweaks
 
 - Erscheinungsbild -> Anwendungen -> Adwaita-dark
+    /org/gnome/desktop/interface/gtk-theme
+    'Adwaita-dark'
+
 - Fenstertitelleisten -> Minimieren -> An
+    /org/gnome/desktop/wm/preferences/button-layout
+    'appmenu:minimize,close'
 - Obere Leiste -> Prouentsatz der Akkuladung -> An
+    /org/gnome/desktop/interface/show-battery-percentage
+    true
+
 
 ### Gnome Extensions
 
