@@ -2,7 +2,7 @@
 
 Ansible Playbook to automatically setup my workstation
 
-> This is tested on __Fedora Silverblue 31__
+> This is tested on __Fedora Silverblue 31__ with gnome
 
 1. `git clone https://gitlab.com/gobbox/ansible`
 2. `cd ansible`
