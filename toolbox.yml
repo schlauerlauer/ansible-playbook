@@ -1,11 +1,16 @@
 ---
 
-- name: Create toolbox container
-  command: toolbox -y create
+- name: toolbox list
+  command: "toolbox list"
+  register: result
+  become: false
   become_user: "{{ user }}"
-  vars:
-    cond: "{{ toolbox_create }}"
-  when: cond
+
+- name: fail if toolbox not present
+  fail:
+    msg: "toolbox container not present"
+  when: result.rc != 0 or "registry.fedoraproject.org" not in result.stdout
+
 #- name: Update toolbox dnf
 #  command: toolbox run sudo dnf -y update
 #  become_user: "{{ user }}"

@@ -1,8 +1,4 @@
 #!/bin/bash
-if (( $EUID != 0 )); then
-    echo "Must be run as root"
-    exit
-fi
-rpm-ostree update
-rpm-ostree install ansible
+sudo ./start_sudo.sh
+toolbox -y create
 systemctl reboot
