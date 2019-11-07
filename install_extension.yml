@@ -20,13 +20,13 @@
         dest: "{{ r_gnome_extension_download_dir.path }}/{{ gnome_extension_info.uuid }}.zip"
       register: r_gnome_extension_download
 
-    - name: Create install directory - {{ gnome_extension_info.name }}
+    - name: "Create install directory - {{ gnome_extension_info.name }}"
       file:
         path: "{{ ansible_user_dir }}/.local/share/gnome-shell/extensions/{{ gnome_extension_info.uuid }}"
         state: directory
         owner: "{{ ansible_user_uid }}"
         group: "{{ ansible_user_gid }}"
-        mode: 0775
+        mode: "0775"
 
     - name: Install Gnome Shell extension - {{ gnome_extension_info.name }}
       unarchive:
