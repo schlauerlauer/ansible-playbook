@@ -20,6 +20,7 @@
   flatpak: 
     name: "{{ item }}"
     state: present
+    method: user
   with_items: "{{ flatpak_packages }}"
   register: result
   failed_when:
@@ -27,6 +28,7 @@
   vars:
     cond: "{{ flatpak_packages_install }}"
   when: cond
+
 
 - name: remove flatpak packages
   become: false
