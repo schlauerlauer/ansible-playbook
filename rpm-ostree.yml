@@ -1,13 +1,13 @@
 ---
 
-- name: "rpm-ostree update"
+- name: "update rpm-ostree"
   become: true
   command: rpm-ostree update
   vars:
     cond: "{{ rpm_ostree_update }}"
   when: cond
 
-- name: "rpm-ostree install packages"
+- name: "install rpm-ostree packages"
   become: true
   command: rpm-ostree install {{ item }}
   with_items: "{{ rpm_ostree_packages }}"
