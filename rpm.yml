@@ -1,3 +1,12 @@
-- name: test
-  debug:
-    msg: "debug!"
+---
+
+- name: "rpm-ostree update"
+  command: rpm-ostree update
+- name: "rpm-ostree install packages"
+  command: rpm-ostree install {{ item }}
+  with_items:
+    - fish
+    - gnome-tweak-tool
+    - libgnome-keyring
+- name: "set fish welcome message"
+  command: set -U fish_greeting ""
