@@ -5,4 +5,4 @@ if (( $EUID != 0 )); then
 fi
 dnf update -y
 dnf install -y ansible
-ansible-pull -U https://gitlab.com/gobbox/ansible
+ansible-playbook local.yml --connection=localhost -i hosts.ini

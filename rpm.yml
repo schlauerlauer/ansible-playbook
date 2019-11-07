@@ -1,5 +1,3 @@
----
-
-- tasks:
-  - debug:
-    msg: debug!
+- name: test
+  debug:
+    msg: "debug!"
