@@ -28,4 +28,15 @@
     cond: "{{ flatpak_packages_install }}"
   when: cond
 
-# TODO: remove
+- name: remove flatpak packages
+  become: false
+  flatpak: 
+    name: "{{ item }}"
+    state: present
+  with_items: "{{ flatpak_remove }}"
+  register: result
+  failed_when:
+    - result.rc != 0
+  vars:
+    cond: "{{ flatpak_packages_remove }}"
+  when: cond

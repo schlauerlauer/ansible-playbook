@@ -25,20 +25,22 @@ flatpak_packages:
   #- org.blender.Blender
   #- org.darktable.Darktable
   - io.github.celluloid_player.Celluloid
+  #- org.gnome.Boxes
   #- org.godotengine.Godot
   #- com.visualstudio.code.oss
   #- com.valvesoftware.Steam
   #- org.nextcloud.Nextcloud
   #- org.kde.krita
   #- org.libreoffice.LibreOffice
-  - org.gnome.Boxes
   #- org.kde.kdenlive
   #- org.shotcut.Shotcut
 flatpak_packages_remove: false
 flatpak_remove:
+  - org.gnome.Boxes
 
 set_gsettings: true
 gnome_settings:
+# `dconf watch /` to see path
   - org.gnome.desktop.interface gtk-theme 'Adwaita-dark'
   - org.gnome.desktop.wm.preferences button-layout 'appmenu:minimize,close'
   - org.gnome.desktop.interface show-battery-percentage true
