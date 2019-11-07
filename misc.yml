@@ -43,7 +43,7 @@
 
 - name: "open bitwarden"
   become: false
-  command: "bitwarden"
+  command: "flatpak run com.bitwarden.desktop"
   async: 1800
   poll: 60
 
