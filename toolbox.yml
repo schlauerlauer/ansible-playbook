@@ -6,7 +6,7 @@
   become: false
   failed_when:
     - result.rc != 0
-    - '"already_exists" not in result.stderr' 
+    - '"already exists" not in result.stderr' 
 
 - name: toolbox list
   command: "toolbox list"
