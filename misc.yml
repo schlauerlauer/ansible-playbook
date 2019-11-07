@@ -36,7 +36,7 @@
   get_url:
     url: "{{ minetime_url }}"
     dest: "/home/{{ user }}/Downloads/MineTime.AppImage"
-    mode: "-rwxr-xr-x"
+    mode: "0770"
   vars:
     cond: "{{ minetime_install }}"
   when: cond

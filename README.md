@@ -39,6 +39,10 @@ Ansible Playbook to automatically setup my workstation
 - kdenlive
 - shortcut
 
+### AppImages
+
+- MineTime
+
 ## Settings
 
 ### Gnome Settings
@@ -72,7 +76,6 @@ Ansible Playbook to automatically setup my workstation
 
 ## ToDo
 
-- minetime (fh) .desktop to .local/share/applications (same as vscodium)
 - nextcloud sync login
 - gnome accounts
 - lock screen timeout
