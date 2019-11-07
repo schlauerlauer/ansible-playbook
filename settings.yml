@@ -40,3 +40,5 @@ flatpak_remove:
 set_gsettings: true
 gnome_settings:
   - org.gnome.desktop.interface gtk-theme 'Adwaita-dark'
+  - org.gnome.desktop.wm.preferences button-layout 'appmenu:minimize,close'
+  - org.gnome.desktop.interface show-battery-percentage true

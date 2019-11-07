@@ -39,6 +39,14 @@ Ansible Playbook to automatically setup my workstation
 - kdenlive
 - shortcut
 
+## Settings
+
+### Gnome Settings
+
+- theme
+- minimize button
+- battery percentage
+
 ---
 
 ## ToDo
@@ -61,20 +69,6 @@ Ansible Playbook to automatically setup my workstation
 - alias vim "flatpak run org.vim.Vim"
 - alias bitwarden "flatpak run com.bitwarden.desktop"
 - alias codium "toolbox run codium"
-
-### Gnome Tweaks
-
-- Erscheinungsbild -> Anwendungen -> Adwaita-dark
-    /org/gnome/desktop/interface/gtk-theme
-    'Adwaita-dark'
-
-- Fenstertitelleisten -> Minimieren -> An
-    /org/gnome/desktop/wm/preferences/button-layout
-    'appmenu:minimize,close'
-- Obere Leiste -> Prouentsatz der Akkuladung -> An
-    /org/gnome/desktop/interface/show-battery-percentage
-    true
-
 
 ### Gnome Extensions
 
