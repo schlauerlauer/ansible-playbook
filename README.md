@@ -19,37 +19,37 @@ Ansible Playbook to automatically setup my workstation
 
 - vim
 
+### Flatpaks
+
+- signal
+- bitwarden
+- spotify
+- blender
+- darktable
+- celluloid (mpv)
+- godot
+- gnome evolution
+- gnome contacts
+- vscode OSS
+- steam
+- nextcloud sync client
+- krita
+- libreoffice
+- gnome boxes
+- kdenlive
+- shortcut
+
 ---
 
 ## ToDo
 
-- Blender (fh)
-- darktable (fh)
-- mpv / celluloid
-- godot (fh)
-- krita (fh)
-- shortcut (fh)
-- evolution
-- libreoffice (fh)
-- steam (fh)
-- gnome boxes (fh)
 - minetime (fh) .desktop to .local/share/applications (same as vscodium)
-- vscodium .desktop ansible / flatpak
-- nextcloud-client
 - set -U fish_greeting ""
 - background image
 
 ### Firefox Addons
 
 - Bitwarden
-
-### Flatpak (host)
-
-- `flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo`
-- flatpak install spotify
-- vim
-- signal
-- flatpak install flathub com.bitwarden.desktop
 
 ### Aliases
 
@@ -70,11 +70,7 @@ Ansible Playbook to automatically setup my workstation
 
 - Hide Activities Button
 
-### Toolbox DNF
-
-- `wget https://github.com/marcoancona/MineTime/releases/download/v1.6.4/MineTime-1.6.4.x86_64.rpm` und `dnf install minetime`
-
-#### vscodium
+### toolbox vscodium
 
 ```bash
 #!/bin/bash

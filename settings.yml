@@ -1,0 +1,36 @@
+user: "janek"
+
+rpm_ostree_update: true
+rpm_ostree_install: true
+rpm_ostree_packages:
+  - fish
+  - gnome-tweak-tool
+  - libgnome-keyring
+  - vim
+
+toolbox_create: true
+toolbox_update: true
+toolbox_packages_install: true
+toolbox_packages:
+  - vim
+  - fish
+
+flatpak_packages_install: true
+flatpak_packages:
+  - org.gnome.Evolution
+  - org.gnome.Contacts
+  - org.signal.Signal
+  - com.bitwarden.desktop
+  - com.spotify.Client
+  #- org.blender.Blender
+  #- org.darktable.Darktable
+  - io.github.celluloid_player.Celluloid
+  #- org.godotengine.Godot
+  #- com.visualstudio.code.oss
+  #- com.valvesoftware.Steam
+  #- org.nextcloud.Nextcloud
+  #- org.kde.krita
+  #- org.libreoffice.LibreOffice
+  - org.gnome.Boxes
+  #- org.kde.kdenlive
+  #- org.shotcut.Shotcut

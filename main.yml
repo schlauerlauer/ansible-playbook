@@ -4,9 +4,9 @@
 - hosts: localhost
   become: true
   tasks:
-    - name: include defaults
+    - name: include settings
       include_vars:
-        file: defaults.yml
+        file: settings.yml
     - name: rpm-ostree tasks
       import_tasks: rpm-ostree.yml
 
@@ -14,9 +14,9 @@
 - hosts: localhost
   become: false
   tasks:
-    - name: include defaults
+    - name: include settings
       include_vars:
-        file: defaults.yml
+        file: settings.yml
     - name: toolbox tasks
       import_tasks: toolbox.yml
     - name: flatpak tasks
