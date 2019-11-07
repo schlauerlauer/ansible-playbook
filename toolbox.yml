@@ -4,6 +4,7 @@
   command: whoami
   register: rc
   become_user: "{{ user }}"
+
 - debug:
     msg: "{{ rc.stdout }}"
 #- name: Create toolbox container

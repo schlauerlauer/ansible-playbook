@@ -6,6 +6,7 @@
   vars:
     cond: "{{ rpm_ostree_update }}"
   when: cond
+
 - name: "rpm-ostree install packages"
   become: true
   command: rpm-ostree install {{ item }}

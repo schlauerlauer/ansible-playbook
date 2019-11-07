@@ -1,4 +1,5 @@
 user: janek
+
 rpm_ostree_update: false
 rpm_ostree_install: true
 rpm_ostree_packages:
