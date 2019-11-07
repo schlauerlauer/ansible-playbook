@@ -42,7 +42,7 @@
   poll: 0
 
 - debug:
-  - msg: "ansible continues after closing bitwarden, or after 30 minutes."
+    msg: "ansible continues after closing bitwarden, or after 30 minutes."
 
 - name: "open bitwarden"
   become: false
