@@ -6,3 +6,5 @@ rpm_ostree_packages:
   - fish
   - gnome-tweak-tool
   - libgnome-keyring
+
+toolbox_create: true

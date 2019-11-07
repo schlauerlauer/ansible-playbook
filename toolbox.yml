@@ -1,16 +1,14 @@
 ---
 
-- name: "whoami"
-  command: whoami
-  register: rc
+- name: Create toolbox container
+  command: toolbox -y create
   become_user: "{{ user }}"
-
-- debug:
-    msg: "{{ rc.stdout }}"
-#- name: Create toolbox container
-#  command: toolbox -y create
-#  become_user: {{ user }}
+  vars:
+    cond: "{{ toolbox_create }}"
+  when: cond
 #- name: Update toolbox dnf
 #  command: toolbox run sudo dnf -y update
+#  become_user: "{{ user }}"
 #- name: Update toolbox dnf
 #  command: toolbox run sudo dnf -y upgrade
+#  become_user: "{{ user }}"
