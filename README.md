@@ -15,6 +15,10 @@ Ansible Playbook to automatically setup my workstation
 - gnome-tweak-tool
 - libgnome-keyring
 
+### Toolbox DNF
+
+- vim
+
 ---
 
 ## ToDo
@@ -33,6 +37,7 @@ Ansible Playbook to automatically setup my workstation
 - vscodium .desktop ansible / flatpak
 - nextcloud-client
 - set -U fish_greeting ""
+- background image
 
 ### Firefox Addons
 
@@ -67,9 +72,6 @@ Ansible Playbook to automatically setup my workstation
 
 ### Toolbox DNF
 
-- update
-- vim
-- fish
 - `wget https://github.com/marcoancona/MineTime/releases/download/v1.6.4/MineTime-1.6.4.x86_64.rpm` und `dnf install minetime`
 
 #### vscodium
