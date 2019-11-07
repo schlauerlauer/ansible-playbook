@@ -3,7 +3,7 @@
 - name: "rpm-ostree update"
   become: true
   command: rpm-ostree update
-  when: "{{ rpm-ostree-update }} == 'true'"
+  when: rpm-ostree-update
 - name: "rpm-ostree install packages"
   become: true
   command: rpm-ostree install {{ item }}
