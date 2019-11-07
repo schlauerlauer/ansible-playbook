@@ -11,9 +11,9 @@
   command: rpm-ostree install {{ item }}
   with_items: "{{ rpm_ostree_packages }}"
   register: result
-  vars:
-    cond: "{{ rpm_ostree_install }}"
-  when: cond
   failed_when:
     - result.rc != 0
     - '"is already requested" not in result.stdout'
+  vars:
+    cond: "{{ rpm_ostree_install }}"
+  when: cond
