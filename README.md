@@ -73,12 +73,16 @@ Ansible Playbook to automatically setup my workstation
 - vitals
 - status-area-horizontal-spacing
 
----
-
-## ToDo
+### Not automated
 
 - nextcloud sync login
 - gnome accounts
+
+---
+
+## Notes
+
+> Installing vscodium gui application in toolbox
 
 ### toolbox vscodium
 
