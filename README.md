@@ -73,7 +73,7 @@ Ansible Playbook to automatically setup my workstation
 - vitals
 - status-area-horizontal-spacing
 
-### Not automated
+### Not automated (yet)
 
 - nextcloud sync login
 - gnome accounts
