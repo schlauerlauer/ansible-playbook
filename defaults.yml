@@ -1,6 +1,7 @@
 user: janek
-rpm-ostree-update: false
-rpm-ostree:
+rpm_ostree_update: false
+rpm_ostree_install: true
+rpm_ostree:
   - fish
   - gnome-tweak-tool
   - libgnome-keyring
