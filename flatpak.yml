@@ -32,7 +32,7 @@
   become: false
   flatpak: 
     name: "{{ item }}"
-    state: present
+    state: absent
   with_items: "{{ flatpak_remove }}"
   register: result
   failed_when:
