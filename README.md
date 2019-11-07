@@ -47,6 +47,25 @@ Ansible Playbook to automatically setup my workstation
 - minimize button
 - battery percentage
 
+## Extensions
+
+### Firefox
+
+- bitwarden
+- gnome-shell-integration
+
+### Gnome Shell
+
+- alt-tab-switcher-popup-delay-removal
+- drop-down-terminal-x
+- cpufreq
+- hide-activities-button
+- launch-new-instance
+- remove-dropdown-arrows
+- sound-output-device-chooser
+- vitals
+- status-area-horizontal-spacing
+
 ---
 
 ## ToDo
@@ -58,17 +77,7 @@ Ansible Playbook to automatically setup my workstation
 - nextcloud sync login
 - gnome accounts
 - firefox bitwarden addon
-- gnome extension firefox addon & hide activities button
 - lock screen timeout
-
-### Aliases
-
-> alias befehl "langer befehl"
-> funcsave befehl
-
-- alias vim "flatpak run org.vim.Vim"
-- alias bitwarden "flatpak run com.bitwarden.desktop"
-- alias codium "toolbox run codium"
 
 ### toolbox vscodium
 
@@ -89,3 +98,8 @@ EOF
 - libX11-xcb
 - dejavu-sans-fonts
 - google-droid-sans-fonts
+
+> alias befehl "langer befehl"
+> funcsave befehl
+
+- alias codium "toolbox run codium"

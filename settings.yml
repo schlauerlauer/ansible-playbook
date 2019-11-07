@@ -23,13 +23,13 @@ flatpak_packages:
   - com.bitwarden.desktop
   - com.spotify.Client
   - io.github.celluloid_player.Celluloid
+  - org.godotengine.Godot
+  - com.visualstudio.code.oss
+  - org.nextcloud.Nextcloud
+  - com.valvesoftware.Steam
   #- org.blender.Blender
   #- org.darktable.Darktable
   #- org.gnome.Boxes
-  #- org.godotengine.Godot
-  #- com.visualstudio.code.oss
-  #- com.valvesoftware.Steam
-  #- org.nextcloud.Nextcloud
   #- org.kde.krita
   #- org.libreoffice.LibreOffice
   #- org.kde.kdenlive
@@ -51,5 +51,13 @@ firefox_addons:
 
 gnome_extension_ids:
   - 1317 # alt-tab-switcher-popup-delay-removal
+  - 1509 # drop-down-terminal-x
+  - 1082 # cpufreq
+  - 1128 # hide-activities-button
+  - 600  # launch-new-instance
+  - 800  # remove-dropdown-arrows
+  - 906  # sound-output-device-chooser
+  - 1460 # vitals
+  - 355  # status-area-horizontal-spacing
 
 post_install_reboot: true

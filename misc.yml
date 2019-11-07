@@ -24,3 +24,9 @@
   vars:
     cond: "{{ firefox_enable }}"
   when: cond
+
+- name: remove fish welcome message
+  replace:
+    path: "~/.config/fish/fish_variables"
+    after: 'fish_greeting:'
+    replace: ''
