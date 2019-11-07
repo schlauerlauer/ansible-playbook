@@ -4,7 +4,7 @@ Ansible Playbook to automatically setup my workstation
 
 > This is tested on __Fedora Silverblue 31__
 
-1. `git clone https://gitlab.com/gobbox/ansible`
+1. `git clone https://gitlab.com/schlauerlauer/automation/workstation.git`
 2. `cd ansible`
 3. `./start.sh`
 4. after reboot `./start.sh`
