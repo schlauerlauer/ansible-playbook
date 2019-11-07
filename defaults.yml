@@ -1,4 +1,5 @@
 user: janek
+rpm-ostree-update: false
 rpm-ostree:
   - fish
   - gnome-tweak-tool
