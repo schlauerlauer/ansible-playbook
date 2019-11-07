@@ -10,5 +10,5 @@ if grep -q "1" "./step.log"; then
     echo "2" > ./step.log
     systemctl reboot
 else
-    sudo ansible-playbook main.yml --connection=localhost -i hosts.ini
+    ansible-playbook main.yml --connection=localhost -i hosts.ini
 fi

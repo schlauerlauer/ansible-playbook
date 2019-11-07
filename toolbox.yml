@@ -1,5 +1,13 @@
 ---
 
+- name: toolbox create
+  command: "toolbox -y create"
+  register: result
+  become: false
+  #become_user: "{{ user }}"
+  failed_when:
+    - result.rc != 0
+
 - name: toolbox list
   command: "toolbox list"
   register: result
