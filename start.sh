@@ -6,7 +6,6 @@ fi
 if grep -q "1" "./step.log"; then
     sudo rpm-ostree update
     sudo rpm-ostree install ansible
-    toolbox -y create
     echo "2" > ./step.log
     systemctl reboot
 else

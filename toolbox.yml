@@ -7,6 +7,7 @@
   #become_user: "{{ user }}"
   failed_when:
     - result.rc != 0
+    - '"already_exists" not in result.strerr' 
 
 - name: toolbox list
   command: "toolbox list"
