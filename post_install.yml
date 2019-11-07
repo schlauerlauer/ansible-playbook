@@ -2,7 +2,7 @@
 
 - name: reboot
   become: false
-  reboot:
+  command: shutdown --reboot
   vars:
     cond: "{{ post_install_reboot }}"
   when: cond
