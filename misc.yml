@@ -36,3 +36,6 @@
   get_url:
     url: "{{ minetime_url }}"
     dest: "/home/{{ user }}/Downloads/MineTime.AppImage"
+  vars:
+    cond: "{{ minetime_install }}"
+  when: cond
