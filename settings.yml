@@ -50,6 +50,9 @@ gnome_settings:
   - org.gnome.control-center last-panel 'online-accounts'
 
 firefox_enable: true
+firefox_app_passwords:
+  - https://lauer.cloud/index.php/settings/user/security
+  - https://mxko.de/index.php/settings/user/security
 firefox_addons:
   - bitwarden-password-manager
   - gnome-shell-integration

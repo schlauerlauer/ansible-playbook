@@ -15,6 +15,21 @@
 - name: open gnome online accounts
   command: "gnome-control-center"
 
+- name: "open firefox app-password sites"
+  become: false
+  command: "firefox {{ item }}"
+  with_items: "{{ firefox_app_passwords }}"
+  register: result
+  failed_when:
+    - result.rc != 0
+  vars:
+    cond: "{{ firefox_enable }}"
+  when: cond
+
+- name: "open bitwarden"
+  become: false
+  command: "bitwarden"
+
 # Firefox Addons
 - name: "open firefox addon pages"
   become: false
