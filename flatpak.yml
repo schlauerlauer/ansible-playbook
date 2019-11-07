@@ -7,16 +7,19 @@
   failed_when:
     - result.rc != 0
 
-- name: add flathub repo
-  command: "flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo"
+- name: add flathub remote
+  flatpak_remote:
+    name: flathub
+    state: present
+    flatpakrepo_url: https://flathub.org/repo/flathub.flatpakrepo
   become: false
+  method: user
 
 - name: install flatpak packages
   become: false
   flatpak: 
     name: "{{ item }}"
     state: present
-    method: user
   with_items: "{{ flatpak_packages }}"
   register: result
   failed_when:
