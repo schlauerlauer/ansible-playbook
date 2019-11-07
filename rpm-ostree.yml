@@ -13,7 +13,7 @@
   register: result
   failed_when:
     - result.rc != 0
-    - '"is already requested" not in result.stdout'
-#  vars:
-#    cond: "{{ rpm_ostree_install }}"
-#  when: cond
+    - '"is already requested" not in result.stderr'
+  vars:
+    cond: "{{ rpm_ostree_install }}"
+  when: cond
