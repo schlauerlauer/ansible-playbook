@@ -1,0 +1,26 @@
+---
+
+- name: check flatpak version
+  command: "flatpak --version"
+  register: result
+  become: false
+  failed_when:
+    - result.rc != 0
+
+- name: add flathub repo
+  command: "flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo"
+  become: false
+
+- name: install flatpak packages
+  become: false
+  flatpak: 
+    name: "{{ item }}"
+    state: present
+    method: user
+  with_items: "{{ flatpak_packages }}"
+  register: result
+  failed_when:
+    - result.rc != 0
+  vars:
+    cond: "{{ flatpak_packages_install }}"
+  when: cond

@@ -13,3 +13,7 @@ toolbox_packages_install: true
 toolbox_packages:
   - vim
   - fish
+
+flatpak_packages_install: true
+flatpak_packages:
+  - org.signal.Signal
