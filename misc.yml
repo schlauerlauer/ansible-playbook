@@ -38,8 +38,14 @@
   async: 1800
   poll: 0
 
+- name: "open nextcloud client"
+  become: false
+  command: "flatpak run org.nextcloud.Nextcloud"
+  async: 1800
+  poll: 0
+
 - debug:
-    msg: "ansible continues after closing bitwarden, or after 30 minutes."
+    msg: "Please setup your online accounts! \n Ansible continues after closing bitwarden, or after 30 minutes (poll-rate: 60 seconds)."
 
 - name: "open bitwarden"
   become: false
