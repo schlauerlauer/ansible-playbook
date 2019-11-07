@@ -8,12 +8,12 @@
     - result.rc != 0
 
 - name: add flathub remote
+  become: false
   flatpak_remote:
     name: flathub
     state: present
     flatpakrepo_url: https://flathub.org/repo/flathub.flatpakrepo
-  become: false
-  method: user
+    method: user
 
 - name: install flatpak packages
   become: false
