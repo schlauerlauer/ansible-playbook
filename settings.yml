@@ -17,14 +17,14 @@ toolbox_packages:
 
 flatpak_packages_install: true
 flatpak_packages:
-  - org.gnome.Evolution
+  - org.gnome.Evolution # favorite
+  - org.signal.Signal # favorite
+  - com.visualstudio.code.oss # favorite
+  - com.bitwarden.desktop # favorite
   - org.gnome.Contacts
-  - org.signal.Signal
-  - com.bitwarden.desktop
   - com.spotify.Client
   - io.github.celluloid_player.Celluloid
   - org.godotengine.Godot
-  - com.visualstudio.code.oss
   - org.nextcloud.Nextcloud
   - com.valvesoftware.Steam
   #- org.blender.Blender
@@ -44,12 +44,16 @@ gnome_settings:
   - org.gnome.desktop.wm.preferences button-layout 'appmenu:minimize,close'
   - org.gnome.desktop.interface show-battery-percentage true
   - org.gnome.desktop.background picture-uri 'file:///{{ playbook_dir }}/wallpaper.jpg'
+  - org.gnome.desktop.background picture-options 'zoom'
+  - org.gnome.shell favorite-apps ['firefox.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Evolution.desktop', 'org.signal.Signal.desktop', 'com.visualstudio.code.oss.desktop', 'com.bitwarden.desktop.desktop']
 
 firefox_enable: true
 firefox_addons:
   - bitwarden-password-manager
   - gnome-shell-integration
 fish_greeting: ""
+minetime_url: "https://github.com/marcoancona/MineTime/releases/download/v1.6.4/MineTime-1.6.4.AppImage"
+
 
 gnome_extension_ids:
   - 1317 # alt-tab-switcher-popup-delay-removal

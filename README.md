@@ -46,7 +46,8 @@ Ansible Playbook to automatically setup my workstation
 - theme
 - minimize button
 - battery percentage
-- background
+- background & scale
+- favorite apps
 
 ## Extensions
 
@@ -72,11 +73,8 @@ Ansible Playbook to automatically setup my workstation
 ## ToDo
 
 - minetime (fh) .desktop to .local/share/applications (same as vscodium)
-- background image
-- gnome favorites
 - nextcloud sync login
 - gnome accounts
-- firefox bitwarden addon
 - lock screen timeout
 
 ### toolbox vscodium

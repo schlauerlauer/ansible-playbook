@@ -31,3 +31,8 @@
     after: 'fish_greeting:'
     replace: "{{ fish_greeting }}"
     regexp: '[^#\n]'
+
+- name: download minetime appimage
+  get_url:
+    url: "{{ minetime_url }}"
+    dest: "/home/{{ user }}/Downloads/MineTime.AppImage"
