@@ -53,6 +53,7 @@ Ansible Playbook to automatically setup my workstation
 - background & scale
 - favorite apps
 - display idle timeout
+- night light
 
 ## Extensions
 
