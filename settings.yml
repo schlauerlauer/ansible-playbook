@@ -53,6 +53,7 @@ gnome_settings:
   - org.gnome.settings-daemon.plugins.color night-light-schedule-from '18.0'
   - org.gnome.settings-daemon.plugins.color night-light-schedule-to '8.0'
   - org.gnome.settings-daemon.plugins.color night-light-temperature 'uint32 3700'
+  - org.gnome.desktop.peripherals.touchpad tap-to-click true
 
 firefox_enable: true
 firefox_app_passwords:
