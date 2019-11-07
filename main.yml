@@ -1,5 +1,6 @@
 ---
 
+# Root tasks
 - hosts: localhost
   become: true
   tasks:
@@ -9,6 +10,7 @@
     - name: rpm-ostree tasks
       import_tasks: rpm-ostree.yml
 
+# User tasks
 - hosts: localhost
   become: false
   tasks:
@@ -17,3 +19,5 @@
         file: defaults.yml
     - name: toolbox tasks
       import_tasks: toolbox.yml
+    - name: flatpak tasks
+      import_tasks: flatpak.yml
