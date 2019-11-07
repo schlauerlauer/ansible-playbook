@@ -99,12 +99,7 @@ gpgkey=https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg
 EOF
 ```
 
-- codium
-- libX11-xcb
-- dejavu-sans-fonts
-- google-droid-sans-fonts
-
-> alias befehl "langer befehl"
-> funcsave befehl
-
-- alias codium "toolbox run codium"
+```bash
+sudo dnf install codium libX11-xcb dejavu-sans-fonts google-droid-sans-fonts
+alias codium "toolbox run codium" && funcsave codium
+```
