@@ -20,12 +20,12 @@ flatpak_packages:
   - org.gnome.Evolution # favorite
   - org.signal.Signal # favorite
   - com.visualstudio.code.oss # favorite
-  - com.bitwarden.desktop # favorite
+  - com.bitwarden.desktop # required in misc.yml # favorite
+  - org.nextcloud.Nextcloud # required in misc.yml
   - org.gnome.Contacts
   - com.spotify.Client
   - io.github.celluloid_player.Celluloid
   - org.godotengine.Godot
-  - org.nextcloud.Nextcloud
   - com.valvesoftware.Steam
   #- org.blender.Blender
   #- org.darktable.Darktable
