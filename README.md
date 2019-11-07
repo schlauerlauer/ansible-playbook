@@ -71,7 +71,6 @@ Ansible Playbook to automatically setup my workstation
 ## ToDo
 
 - minetime (fh) .desktop to .local/share/applications (same as vscodium)
-- set -U fish_greeting ""
 - background image
 - gnome favorites
 - nextcloud sync login

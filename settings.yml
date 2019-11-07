@@ -48,6 +48,7 @@ firefox_enable: true
 firefox_addons:
   - bitwarden-password-manager
   - gnome-shell-integration
+fish_greeting: ""
 
 gnome_extension_ids:
   - 1317 # alt-tab-switcher-popup-delay-removal
