@@ -44,4 +44,9 @@ gnome_settings:
   - org.gnome.desktop.wm.preferences button-layout 'appmenu:minimize,close'
   - org.gnome.desktop.interface show-battery-percentage true
 
+firefox_enable: true
+firefox_addons:
+  - bitwarden-password-manager
+  - gnome-shell-integration
+
 post_install_reboot: true

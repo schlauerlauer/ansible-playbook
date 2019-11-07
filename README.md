@@ -55,11 +55,10 @@ Ansible Playbook to automatically setup my workstation
 - set -U fish_greeting ""
 - background image
 - gnome favorites
-- reboot
-
-### Firefox Addons
-
-- Bitwarden
+- nextcloud sync login
+- gnome accounts
+- firefox bitwarden addon
+- gnome extension firefox addon & hide activities button
 
 ### Aliases
 
@@ -69,10 +68,6 @@ Ansible Playbook to automatically setup my workstation
 - alias vim "flatpak run org.vim.Vim"
 - alias bitwarden "flatpak run com.bitwarden.desktop"
 - alias codium "toolbox run codium"
-
-### Gnome Extensions
-
-- Hide Activities Button
 
 ### toolbox vscodium
 
