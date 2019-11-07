@@ -30,3 +30,4 @@
     path: "~/.config/fish/fish_variables"
     after: 'fish_greeting:'
     replace: ''
+    regexp: '[^#\n]'
