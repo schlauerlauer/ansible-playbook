@@ -37,4 +37,6 @@ flatpak_packages:
 flatpak_packages_remove: false
 flatpak_remove:
 
-gnome_theme: "Adwaita-dark"
+set_gsettings: true
+gnome_settings:
+  - org.gnome.desktop.interface gtk-theme 'Adwaita-dark'

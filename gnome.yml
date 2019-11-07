@@ -1,7 +1,12 @@
 ---
 
-- name: set gnome theme
-  dconf:
-    key: "/org/gnome/desktop/interface/gtk-theme"
-    value: "{{ gnome_theme }}"
-    state: present
+- name: set gsettings
+  become: false
+  command: "gsettings set {{ item }}"
+  with_items: "{{ gnome_settings }}"
+  register: result
+  failed_when:
+    - result.rc != 0
+  vars:
+    cond: "{{ set_gsettings }}"
+  when: cond
