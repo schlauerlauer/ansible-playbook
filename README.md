@@ -46,6 +46,7 @@ Ansible Playbook to automatically setup my workstation
 - theme
 - minimize button
 - battery percentage
+- background
 
 ## Extensions
 
