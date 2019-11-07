@@ -9,7 +9,7 @@
 - name: "rpm-ostree install packages"
   become: true
   command: rpm-ostree install {{ item }}
-  with_items: "{{ rpm-ostree }}"
+  with_items: "{{ rpm_ostree_packages }}"
   register: result
   vars:
     cond: "{{ rpm_ostree_install }}"
