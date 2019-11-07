@@ -19,9 +19,10 @@
     msg: "toolbox container not present"
   when: result.rc != 0 or "registry.fedoraproject.org" not in result.stdout
 
-#- name: Update toolbox dnf
-#  command: toolbox run sudo dnf -y update
-#  become_user: "{{ user }}"
-#- name: Update toolbox dnf
-#  command: toolbox run sudo dnf -y upgrade
-#  become_user: "{{ user }}"
+- name: Update toolbox dnf
+  command: toolbox run sudo dnf -y update
+  become_user: "{{ user }}"
+
+- name: Update toolbox dnf
+  command: toolbox run sudo dnf -y upgrade
+  become_user: "{{ user }}"
