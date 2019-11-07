@@ -8,5 +8,12 @@
         file: defaults.yml
     - name: rpm-ostree tasks
       import_tasks: rpm-ostree.yml
+
+- hosts: localhost
+  become: false
+  tasks:
+    - name: include defaults
+      include_vars:
+        file: defaults.yml
     - name: toolbox tasks
       import_tasks: toolbox.yml
