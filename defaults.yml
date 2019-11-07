@@ -6,6 +6,10 @@ rpm_ostree_packages:
   - fish
   - gnome-tweak-tool
   - libgnome-keyring
-  - htop
 
 toolbox_create: true
+toolbox_update: true
+toolbox_packages_install: true
+toolbox_packages:
+  - vim
+  - fish
