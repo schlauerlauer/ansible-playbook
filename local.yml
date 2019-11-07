@@ -1,7 +1,12 @@
 ---
 
 - hosts: localhost
-  become: false
+  become: true
   tasks:
-    - name: rpm-ostree tasks
-      import_tasks: rpm.yml
+    - name: include defaults
+      include_vars:
+        file: defaults.yml
+    #- name: rpm-ostree tasks
+    # import_tasks: rpm-ostree.yml
+    - name: toolbox tasks
+      import_tasks: toolbox.yml

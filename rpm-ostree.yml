@@ -1,0 +1,13 @@
+---
+
+- name: "rpm-ostree update"
+  become: true
+  command: rpm-ostree update
+- name: "rpm-ostree install packages"
+  become: true
+  command: rpm-ostree install {{ item }}
+  with_items: "{{ rpm-ostree }}"
+  register: result
+  failed_when:
+    - result.rc != 0
+    - '"is already requested" not in result.stdout'

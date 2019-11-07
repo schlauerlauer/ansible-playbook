@@ -1,0 +1,5 @@
+user: janek
+rpm-ostree:
+  - fish
+  - gnome-tweak-tool
+  - libgnome-keyring

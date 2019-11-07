@@ -7,6 +7,14 @@ Ansible Playbook to automatically setup my workstation
 3. `sudo ./start.sh`
 4. after reboot `sudo ./ansible.sh`
 
+## Packages
+
+### RPM-Ostree
+
+- fish
+- gnome-tweak-tool
+- libgnome-keyring
+
 ---
 
 ## ToDo
@@ -24,14 +32,7 @@ Ansible Playbook to automatically setup my workstation
 - minetime (fh) .desktop to .local/share/applications (same as vscodium)
 - vscodium .desktop ansible / flatpak
 - nextcloud-client
-
-### RPM Ostree Packages
-
-- rpm-ostree update
-- fish
 - set -U fish_greeting ""
-- gnome-tweak-tool
-- (nextcloud-client) libgnome-keyring
 
 ### Firefox Addons
 
