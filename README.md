@@ -4,8 +4,8 @@ Ansible Playbook to automatically setup my workstation
 
 1. `git clone https://gitlab.com/gobbox/ansible`
 2. `cd ansible`
-3. `sudo ./start.sh`
-4. after reboot `sudo ./ansible.sh`
+3. `./start.sh`
+4. after reboot `./start.sh`
 
 ## Packages
 
@@ -40,7 +40,7 @@ Ansible Playbook to automatically setup my workstation
 
 ### Flatpak (host)
 
-- ´flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo`
+- `flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo`
 - flatpak install spotify
 - vim
 - signal
@@ -70,7 +70,7 @@ Ansible Playbook to automatically setup my workstation
 - update
 - vim
 - fish
-- wget https://github.com/marcoancona/MineTime/releases/download/v1.6.4/MineTime-1.6.4.x86_64.rpm und dnf install minetime
+- `wget https://github.com/marcoancona/MineTime/releases/download/v1.6.4/MineTime-1.6.4.x86_64.rpm` und `dnf install minetime`
 
 #### vscodium
 
