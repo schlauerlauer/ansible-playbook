@@ -86,6 +86,13 @@ Ansible Playbook to automatically setup my workstation
   - rpm-ostree
   - gnome
 - [firefox-gnome-theme](https://github.com/rafaelmardojai/firefox-gnome-theme)
+- Guake Drop-Down Terminal
+- Tilix
+- gh/erpalma/throttled
+- darktable verlaufsfilter module
+- how to fix fullscreen tearing in gnome reddit
+- arandr (xrandr script)
+- appeditor
 
 ---
 
