@@ -85,6 +85,7 @@ Ansible Playbook to automatically setup my workstation
   - toolbox
   - rpm-ostree
   - gnome
+- [firefox-gnome-theme](https://github.com/rafaelmardojai/firefox-gnome-theme)
 
 ---
 
