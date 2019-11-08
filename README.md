@@ -80,6 +80,11 @@ Ansible Playbook to automatically setup my workstation
 
 - nextcloud sync login
 - gnome accounts
+- tags
+  - flatpak
+  - toolbox
+  - rpm-ostree
+  - gnome
 
 ---
 
