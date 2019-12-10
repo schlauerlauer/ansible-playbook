@@ -7,16 +7,25 @@
   failed_when:
     - result.rc != 0
     - '"already exists" not in result.stderr' 
+  vars:
+    cond: "{{ toolbox_create }}"
+  when: cond
 
 - name: toolbox list
   command: "toolbox list"
   register: result
   become: false
+  vars:
+    cond: "{{ toolbox_create }}"
+  when: cond
 
 - name: fail if toolbox not present
   fail:
     msg: "toolbox container not present"
-  when: result.rc != 0 or "registry.fedoraproject.org" not in result.stdout
+  when: result.rc != 0 or "registry.fedoraproject.org" not in result.stdout#
+  vars:
+    cond: "{{ toolbox_create }}"
+  when: cond
 
 - name: update toolbox dnf
   become: false

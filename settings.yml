@@ -1,22 +1,22 @@
 user: "janek"
 
-rpm_ostree_update: true
-rpm_ostree_install: true
+rpm_ostree_update: false
+rpm_ostree_install: false
 rpm_ostree_packages:
   - fish
   - gnome-tweak-tool
   - libgnome-keyring
   - vim
 
-toolbox_create: true
-toolbox_update: true
-toolbox_packages_install: true
+toolbox_create: false
+toolbox_update: false
+toolbox_packages_install: false
 toolbox_packages:
   - vim
   - fish
   - geeqie
 
-flatpak_packages_install: true
+flatpak_packages_install: false
 flatpak_packages:
   - org.gnome.Evolution # favorite
   - org.signal.Signal # favorite
@@ -68,7 +68,7 @@ firefox_addons:
   - bitwarden-password-manager
   - gnome-shell-integration
 fish_greeting: ""
-minetime_install: true
+minetime_install: false
 minetime_url: "https://github.com/marcoancona/MineTime/releases/download/v1.6.4/MineTime-1.6.4.AppImage"
 
 
@@ -82,5 +82,6 @@ gnome_extension_ids:
   - 906  # sound-output-device-chooser
   - 1460 # vitals
   - 355  # status-area-horizontal-spacing
+  - 2027 # wg-indicator
 
-post_install_reboot: true
+post_install_reboot: false
