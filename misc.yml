@@ -60,6 +60,13 @@
     replace: "{{ fish_greeting }}"
     regexp: '[^#\n]'
 
+- name: Add the user 'janek' with a fish shell, appending the group 'dialout' to the user's groups
+  user:
+    name: janek
+    shell: /usr/bin/fish
+    groups: dialout
+    append: yes
+
 #- name: download minetime appimage
 #  get_url:
 #    url: "{{ minetime_url }}"
