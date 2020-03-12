@@ -69,6 +69,7 @@ firefox_app_passwords:
 firefox_addons:
   - bitwarden-password-manager
   - gnome-shell-integration
+  - adguard-adblocker
 fish_greeting: ""
 minetime_install: false
 minetime_url: "https://github.com/marcoancona/MineTime/releases/download/v1.6.4/MineTime-1.6.4.AppImage"
