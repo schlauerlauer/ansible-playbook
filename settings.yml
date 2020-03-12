@@ -6,7 +6,6 @@ rpm_ostree_packages:
   - fish
   - gnome-tweak-tool
   - libgnome-keyring
-  - vim
 
 toolbox_create: false
 toolbox_update: false
@@ -14,10 +13,13 @@ toolbox_packages_install: false
 toolbox_packages:
   - vim
   - fish
-  - geeqie
 
 flatpak_packages_install: false
 flatpak_packages:
+  - org.geeqie.Geeqie
+  - org.vim.Vim
+  - org.gnome.Maps
+  - org.gnome.SoundRecorder
   - org.gnome.Evolution # favorite
   - org.signal.Signal # favorite
   - com.visualstudio.code.oss # favorite
@@ -77,7 +79,7 @@ gnome_extension_ids:
   - 1509 # drop-down-terminal-x
   - 1082 # cpufreq
   - 1128 # hide-activities-button
-  - 600  # launch-new-instance
+  #- 600  # launch-new-instance
   - 800  # remove-dropdown-arrows
   - 906  # sound-output-device-chooser
   - 1460 # vitals
