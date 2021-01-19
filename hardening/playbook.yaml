@@ -1,0 +1,9 @@
+---
+- hosts: all
+
+  tasks:
+  - name: Perform full patching
+    package:
+      name: '*'
+      state: latest
+    become: yes
